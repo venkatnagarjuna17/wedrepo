@@ -1,1 +1,10 @@
-dfsdfsdf
+pipeline {
+    agent {label 'slaveslot'}
+    stages {
+        stage ('build stage'){
+            steps {
+                echo "this is farook"
+            }
+        }
+    }
+}
